@@ -1,0 +1,5 @@
+openssl
+libpcre3
+procps
+perl
+https://github.com/Mashape/kong/releases/download/0.10.3/kong-0.10.3.trusty_all.deb

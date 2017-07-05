@@ -1,0 +1,6 @@
+applications:
+- name: cf-kong
+  buildpack: https://bitbucket.org/cf-utilities/cf-buildpack-multi
+  command: ./run.sh
+  services:
+  - kong-db # cf create-service elephantsql turtle kong-db
