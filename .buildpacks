@@ -1,2 +1,2 @@
-https://github.com/thodnev/heroku-buildpack-apt
+https://github.com/pivotal-cf-experimental/apt-buildpack
 https://github.com/making/dummy-buildpack
