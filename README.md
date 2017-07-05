@@ -39,5 +39,3 @@ Server: kong/0.10.3
 ```
 curl https://example-api-kong.cfapps.io
 ```
-
-does not work why??
