@@ -37,7 +37,7 @@ Server: kong/0.10.3
 ## Forward your requests through Kong
 
 ```
-curl https://you-kong.cfapps.io -H "Host: example-api-kong.cfapps.io"
+curl https://example-api-kong.cfapps.io
 ```
 
 does not work why??
