@@ -39,3 +39,30 @@ Server: kong/0.10.3
 ```
 curl https://example-api-kong.cfapps.io
 ```
+
+## Use Basic Authentication Plugin
+
+### Enable plugin
+
+```
+curl -X POST http://localhost:8001/apis/example-api/plugins -d name=basic-auth -d config.hide_credentials=true
+```
+
+### Add consumer
+
+```
+curl -X POST http://localhost:8001/consumers -d username=demo
+```
+
+### Add user
+
+```
+curl -X POST http://localhost:8001/consumers/demo/basic-auth -d username=user -d password=password
+```
+
+Access example API
+
+```
+curl -u user:password https://example-api-kong.cfapps.io
+```
+
