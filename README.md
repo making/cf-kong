@@ -1,4 +1,4 @@
-# Kong on Cloud Foundry
+# [Kong](https://getkong.org/) on Cloud Foundry
 
 
 ## How to deploy on [Pivotal Web Services](https://run.pivotal.io)
