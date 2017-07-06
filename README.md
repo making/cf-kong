@@ -12,7 +12,7 @@ port `8080` is used for incoming HTTP traffic from your clients. You can access 
 port `8001` is used for the Admin API. You can access this endpoint with the following command.
 
 ```
-cf ssh -N -T -L 8081:localhost:8081 your-kong
+cf ssh -N -T -L 8001:localhost:8001 your-kong
 ```
 
 > If you use a postgres service which is different from elephantsql, you need to change `SERVICE` in `run.sh`.
