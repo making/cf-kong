@@ -4,7 +4,7 @@
 ## How to deploy on [Pivotal Web Services](https://run.pivotal.io)
 
 ```
-cf cf create-service elephantsql turtle kong-db
+cf create-service elephantsql turtle kong-db
 cf push your-kong
 ```
 
