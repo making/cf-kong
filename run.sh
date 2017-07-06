@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 export KONG_PROXY_LISTEN=0.0.0.0:8080
 #export KONG_ADMIN_LISTEN=0.0.0.0:8080
@@ -26,8 +26,13 @@ export KONG_LUA_PACKAGE_CPATH=$LUA_CPATH
 kong start --vv
 
 # keep this process alive
-while true
-do
-    sleep 1d
+while true;do
+	sleep 3
+	nginx_count=`ps aux | grep maste[r] | wc -l`
+	if [ "$nginx_count" != "1" ];then
+		echo "Some process crashed"
+		ps aux
+		exit 1
+	fi
 done
 
